@@ -42,15 +42,15 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      background: #1a1a1a;
+      background: #d81b6010;
       color: #ffffff;
       padding: 20px;
       border-radius: 10px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0 20px #ec407907;
     }
   
     .countdown-title {
-      font-size: 1.5em;
+      font-size: 2em;
       margin-bottom: 10px;
       background-image: linear-gradient(195deg, #EC407A, #D81B60);
       background-clip: text;
@@ -89,57 +89,63 @@
   
     .countdown div label {
       font-size: 0.8em;
-      color: #aaaaaa;
+      color: #520a36;
     }
+  .interactive {
+  font-family: 'Dream Avenue' !important;
+
+  font-size: 5em;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 20px;
+  transition: color 0.55s ease, transform 0.15s ease;
+  }
+
+  .interactive:hover {
+    color: #ff4081;
+    transform: scale(1.25);
+  }
+
   </style>
   
 
 
 </head>
 
-<body class="presentation-page bg-gray-200">
+<body class="presentation-page bg-gray-200" style="background-image: url('./assets/img/jessica/logoXV.svg')">
 
       </div>
     </div>
   </div>
   <header class="header-2">
-    <div class="page-header min-vh-75 relative" style="background-image: url('./assets/img/bg2.jpg')">
-      <span class="mask bg-gradient-primary opacity-4"></span>
+    <div class="page-header min-vh-75 relative" style="background-image: url('./assets/img/jessica/main.jpg')">
+      <span class="mask bg-gradient-primary opacity-2"></span>
       <div class="container">
         <div class="row">
           <div class="col-lg-7 text-center mx-auto">
-            <h1 class="text-white pt-3 mt-n5">Jessica's Quince</h1>
-            <p class="lead text-white mt-3">Vienvenidos a mi pagina de mis Quince</p>
+            <!-- <h1 class="text-white pt-3 mt-n5"> <img alt="XV Jessica" src="../../assets/img/jessica/jessicaXV.png">
+            </h1> -->
+            <!-- <p class="lead text-white mt-3">Estas Invitado a Mis XV Años</p> -->
           </div>
+          <h1 class="interactive">Jessica's <br> XV</h2>
+
         </div>
+
       </div>
+      
     </div>
+    
   </header>
   <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
     <section class="pt-3 pb-4" id="count-stats">
       <div class="container">
         <div class="row">
+                    <center><h2 class="countdown-title"><span>FALTAN...</span></p></center> </h2>
 
-
-
-             
-
-                <!-- <div class="col-lg-9 mx-auto py-3"> -->
-                  <!-- <div class="p-3 text-center"> -->
-                  <!-- <ul class="col-md-4 position-relative"> -->
-                    <h2 class="mb-0"><span>Julio 20, 2024 7:00 PM</span></p>
-                    <!-- <div class="countainer-ul"> -->
-                      <h2 class="text-gradient text-primary"><span class="days" >0</span> Dias <span class="hours" >0</span> Horas <span class="minutes">0</span> Minutos <span class="seconds">0</span> Segundos</h2>
-                      <!-- <h2 class="text-gradient text-primary"><span class="hours">0</span> Horas</h2>
-                      <h2 class="text-gradient text-primary"><span class="minutes">0</span> Minutos</h2>
-                      <h2 class="text-gradient text-primary"><span class="seconds">0</span> Segundos</h2> -->
-                    <!-- </div> -->
-                <!-- </div> -->
-              <!-- </div> -->
             </div>
           </div>
           <div class="countdown-container">
-            <h2 class="countdown-title">Countdown to Julio 20, 2024 7:00 PM</h2>
+            <!-- <h2 class="countdown-title"></h2> -->
             <div class="countdown">
               <div>
                 <span class="days">0</span>
@@ -168,18 +174,16 @@
         <div class="row mt-5 text-center">
           <div class="col-12">
             <div class="avatar-group">
-              <a href="javascript:;" class="avatar avatar-lg rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Jessica Dominguez">
-                <img alt="Image placeholder" src="../../assets/img/team-1.jpg">
+              <a href="javascript:;" class="avatar avatar-xl rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Jessica Dominguez">
+                <img alt="Jessica" src="../../assets/img/jessica/jessSquare.jpg">
               </a>
-              <a href="javascript:;" class="avatar avatar-lg rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Isaac Dominguez">
-                <img alt="Image placeholder" src="../../assets/img/team-2.jpg">
+              <a href="javascript:;" class="avatar avatar-xl rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Isaac Dominguez y Wendy Saavedra">
+                <img alt="Wendy Y Issac" src="../../assets/img/jessica/papas.jpg">
               </a>
-              <a href="javascript:;" class="avatar avatar-lg rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Wendy Saavedra">
-                <img alt="Image placeholder" src="../../assets/img/team-3.jpg">
+              <a href="javascript:;" class="avatar avatar-xl rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Anel Orzuna">
+                <img alt="Anel" src="../../assets/img/jessica/anel.jpg">
               </a>
-              <a href="javascript:;" class="avatar avatar-lg rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Anel Urzua">
-                <img alt="Image placeholder" src="../../assets/img/team-4.jpg">
-              </a>
+       
             </div>
           </div>
 
@@ -194,7 +198,7 @@
           return new bootstrap.Tooltip(tooltipTriggerEl)
         })
       </script>
-<div class="container">
+<div class="container" >
   <div class="row mt-3">
   <!-- <div class="row align-items-center"> -->
     <div class="col-lg-4 ms-auto me-auto p-lg-4 mt-lg-0 mt-4">
@@ -202,7 +206,8 @@
         <div class="card card-rotate card-background card-background-mask-primary shadow-primary mt-md-0 mt-5">
           <div class="front front-background" style="background-image: url(https://images.unsplash.com/photo-1569683795645-b62e50fbf103?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80); background-size: cover;">
             <div class="card-body py-7 text-center">
-              <i class="material-icons text-white text-4xl my-3">touch_app</i>
+              <i class="material-icons text-white text-4xl my-3"><img class="w-10 my-auto" src="assets/img/jessica/mass.svg" alt="mass"></i>
+              
               <h3 class="text-white">Misa</h3>
               <p class="text-white opacity-8">Informacion importante sobre la ubicacion y la hora de la misa de Jessica.</p>
             </div>
@@ -211,7 +216,7 @@
             <div class="card-body pt-7 text-center">
               <h3 class="text-white">Misa</h3>
               <p class="text-white opacity-8"> La misa tomara acabo a las 2:00 PM en la <a href="https://www.google.com/maps/place/Christ+the+King+Roman+Catholic+Church/@40.837654,-74.1956941,10z/data=!3m1!5s0x89c2f4391d9de1eb:0x9e7f79b0b373eaf5!4m10!1m2!2m1!1schrist+the+king+catholic+church!3m6!1s0x89c2f438e2c31c77:0x951a5e503909530a!8m2!3d40.837654!4d-73.9155427!15sCh9jaHJpc3QgdGhlIGtpbmcgY2F0aG9saWMgY2h1cmNoWiEiH2NocmlzdCB0aGUga2luZyBjYXRob2xpYyBjaHVyY2iSAQ9jYXRob2xpY19jaHVyY2iaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVUnBjRTQyTW1aM0VBReABAA!16s%2Fg%2F1twy_g_d?entry=ttu">iglesia</a> Christ the King Roman Catholic Church.  </p>
-              <a href="https://www.google.com/maps/place/Christ+the+King+Roman+Catholic+Church/@40.837654,-74.1956941,10z/data=!3m1!5s0x89c2f4391d9de1eb:0x9e7f79b0b373eaf5!4m10!1m2!2m1!1schrist+the+king+catholic+church!3m6!1s0x89c2f438e2c31c77:0x951a5e503909530a!8m2!3d40.837654!4d-73.9155427!15sCh9jaHJpc3QgdGhlIGtpbmcgY2F0aG9saWMgY2h1cmNoWiEiH2NocmlzdCB0aGUga2luZyBjYXRob2xpYyBjaHVyY2iSAQ9jYXRob2xpY19jaHVyY2iaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVUnBjRTQyTW1aM0VBReABAA!16s%2Fg%2F1twy_g_d?entry=ttu" target="_blank" class="btn btn-white btn-sm w-50 mx-auto mt-3">Ubicacion</a>
+              <a href="https://www.google.com/maps/place/Christ+the+King+Roman+Catholic+Church/@40.837654,-74.1956941,10z/data=!3m1!5s0x89c2f4391d9de1eb:0x9e7f79b0b373eaf5!4m10!1m2!2m1!1schrist+the+king+catholic+church!3m6!1s0x89c2f438e2c31c77:0x951a5e503909530a!8m2!3d40.837654!4d-73.9155427!15sCh9jaHJpc3QgdGhlIGtpbmcgY2F0aG9saWMgY2h1cmNoWiEiH2NocmlzdCB0aGUga2luZyBjYXRob2xpYyBjaHVyY2iSAQ9jYXRob2xpY19jaHVyY2iaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVUnBjRTQyTW1aM0VBReABAA!16s%2Fg%2F1twy_g_d?entry=ttu" target="_blank" class="btn btn-white btn-sm w-50 mx-auto mt-3">Ver Ubicacion</a>
             </div>
           </div>
         </div>
@@ -222,18 +227,18 @@
               <div class="card card-rotate card-background card-background-mask-primary shadow-primary mt-md-0 mt-5">
                 <div class="front front-background" style="background-image: url(https://images.unsplash.com/photo-1569683795645-b62e50fbf103?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80); background-size: cover;">
                   <div class="card-body py-7 text-center">
-                    <i class="material-icons text-white text-4xl my-3">touch_app</i>
-                    <h3 class="text-white">Fiesta</h3>
-                    <p class="text-white opacity-8">Informacion importante sobre la ubicacion y la hora de la fiesta de Jessica.</p>
+                    <i class="material-icons text-white text-4xl my-3"><img class="w-10 my-auto" src="assets/img/jessica/party.svg" alt="party"></i>
+                    <h3 class="text-white">Recepcion</h3>
+                    <p class="text-white opacity-8">Informacion importante sobre la ubicacion y la hora de la recepcion de Jessica.</p>
                   </div>
                 </div>
                 <div class="back back-background" style="background-image: url(https://images.unsplash.com/photo-1498889444388-e67ea62c464b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1365&q=80); background-size: cover;">
                   <div class="card-body pt-7 text-center">
-                    <h3 class="text-white">Fiesta</h3>
-                    <p class="text-white opacity-8"> La fiesta tomara acabo a las 7:00 PM en el 
+                    <h3 class="text-white">Recepcion</h3>
+                    <p class="text-white opacity-8"> La recepcion tomara acabo a las 7:00 PM en el 
                       <a href="https://www.google.com/maps/place/Dreams+Sunset/@40.6461853,-73.9985168,17z/data=!3m1!4b1!4m6!3m5!1s0x89c25b007fa76a5b:0x18e9cfb897d60e43!8m2!3d40.6461853!4d-73.9959419!16s%2Fg%2F11y3zf4ymx?entry=ttu">salon</a> Dreams Sunset.
                     </p>
-                    <a href="https://www.google.com/maps/place/Dreams+Sunset/@40.6461853,-73.9985168,17z/data=!3m1!4b1!4m6!3m5!1s0x89c25b007fa76a5b:0x18e9cfb897d60e43!8m2!3d40.6461853!4d-73.9959419!16s%2Fg%2F11y3zf4ymx?entry=ttu" target="_blank" class="btn btn-white btn-sm w-50 mx-auto mt-3">Ubicacion</a>
+                    <a href="https://www.google.com/maps/place/Dreams+Sunset/@40.6461853,-73.9985168,17z/data=!3m1!4b1!4m6!3m5!1s0x89c25b007fa76a5b:0x18e9cfb897d60e43!8m2!3d40.6461853!4d-73.9959419!16s%2Fg%2F11y3zf4ymx?entry=ttu" target="_blank" class="btn btn-white btn-sm w-50 mx-auto mt-3">Ver Ubicacion</a>
                   </div>
                 </div>
               </div>
@@ -488,251 +493,35 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-3">
-            <div class="position-sticky pb-lg-5 pb-3 mt-lg-0 mt-5 ps-2" style="top: 100px">
-              <h3>Elements</h3>
-              <h6 class="text-secondary font-weight-normal pe-3">80+ carefully crafted small elements that come with multiple colors and shapes</h6>
-            </div>
-          </div>
-          <div class="col-lg-9">
-            <div class="row mt-3">
-              <div class="col-md-4">
-                <a href="./sections/elements/buttons.html">
-                  <div class="card shadow-lg move-on-hover min-height-160 min-height-160">
-                    <img class="w-100 my-auto" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/sections/buttons.jpg" alt="buttons">
-                  </div>
-                  <div class="mt-2 ms-2">
-                    <h6 class="mb-0">Buttons</h6>
-                    <p class="text-secondary text-sm">6 Examples</p>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-4 mt-md-0 mt-4">
-                <a href="./sections/elements/avatars.html">
-                  <div class="card shadow-lg move-on-hover min-height-160 min-height-160">
-                    <img class="w-100 my-auto" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/sections/avatars.jpg" alt="avatars">
-                  </div>
-                  <div class="mt-2 ms-2">
-                    <h6 class="mb-0">Avatars</h6>
-                    <p class="text-secondary text-sm">2 Examples</p>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-4 mt-md-0 mt-4">
-                <a href="./sections/elements/dropdowns.html">
-                  <div class="card shadow-lg move-on-hover min-height-160 min-height-160">
-                    <img class="w-100 my-auto" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/sections/dropdowns.jpg" alt="dropdowns">
-                  </div>
-                  <div class="mt-2 ms-2">
-                    <h6 class="mb-0">Dropdowns</h6>
-                    <p class="text-secondary text-sm">2 Examples</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="row mt-3">
-              <div class="col-md-4">
-                <a href="./sections/elements/toggles.html">
-                  <div class="card shadow-lg move-on-hover min-height-160 min-height-160">
-                    <img class="w-100 my-auto" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/sections/switch.jpg" alt="toggles">
-                  </div>
-                  <div class="mt-2 ms-2">
-                    <h6 class="mb-0">Toggles</h6>
-                    <p class="text-secondary text-sm">2 Examples</p>
-                  </div>
-                </a>
-              </div>
-              
-            </div>
-            <div class="row mt-3">
-              <div class="col-md-4 mt-md-0 mt-3">
-                <a href="./sections/elements/breadcrumbs.html">
-                  <div class="card shadow-lg move-on-hover min-height-160 min-height-160">
-                    <img class="w-100 my-auto" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/sections/breadcrumbs.jpg" alt="breadcrumbs">
-                  </div>
-                  <div class="mt-2 ms-2">
-                    <h6 class="mb-0">Breadcrumbs</h6>
-                    <p class="text-secondary text-sm">1 Example</p>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-4 mt-md-0 mt-4">
-                <a href="./sections/elements/badges.html">
-                  <div class="card shadow-lg move-on-hover min-height-160 min-height-160">
-                    <img class="w-100 my-auto" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/sections/badges.jpg" alt="badges">
-                  </div>
-                  <div class="mt-2 ms-2">
-                    <h6 class="mb-0">Badges</h6>
-                    <p class="text-secondary text-sm">3 Example</p>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-4 mt-md-0 mt-4">
-                <a href="./sections/elements/progress-bars.html">
-                  <div class="card shadow-lg move-on-hover min-height-160 min-height-160">
-                    <img class="w-100 my-auto" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/sections/progress.jpg" alt="progress">
-                  </div>
-                  <div class="mt-2 ms-2">
-                    <h6 class="mb-0">Progress Bars</h6>
-                    <p class="text-secondary text-sm">4 Examples</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="row mt-3">
-
-              <div class="col-md-4 mt-md-0 mt-4">
-                <a href="./sections/elements/typography.html">
-                  <div class="card shadow-lg move-on-hover min-height-160 min-height-160">
-                    <img class="w-100 my-auto" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/sections/typography.jpg" alt="typography">
-                  </div>
-                  <div class="mt-2 ms-2">
-                    <h6 class="mb-0">Typography</h6>
-                    <p class="text-secondary text-sm">2 Examples</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
+        
         </div>
       </div>
+    
+      
     </section>
-    <section class="py-5">
-      <div class="container">
-        <div class="row">
-          <div class="row text-center my-sm-5 mt-5">
-            <div class="col-lg-6 mx-auto">
-              <span class="badge bg-primary mb-3">Boost creativity</span>
-              <h2 class="">With our coded pages</h2>
-              <p class="lead">The easiest way to get started is to use one of our <br /> pre-built example pages. </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container mt-5">
-        <div class="row">
-          <div class="col-md-8">
-            <div class="row mt-4">
-              <div class="col-md-6">
-                <a href="./pages/about-us.html">
-                  <div class="card move-on-hover">
-                    <img class="w-100" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/assets/img/about-us.jpg" alt="aboutus">
-                  </div>
-                  <div class="mt-2 ms-2">
-                    <h6 class="mb-0">About Us Page</h6>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-6 mt-md-0 mt-5">
-                <a href="./pages/contact-us.html">
-                  <div class="card move-on-hover">
-                    <img class="w-100" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/assets/img/contact-us.jpg" alt="contacus">
-                  </div>
-                  <div class="mt-2 ms-2">
-                    <h6 class="mb-0">Contact Us Page</h6>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-6 mt-md-3 mt-6">
-                <a href="./pages/sign-in.html">
-                  <div class="card move-on-hover">
-                    <img class="w-100" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/assets/img/sign-in.jpg" alt="signin">
-                  </div>
-                  <div class="mt-2 ms-2">
-                    <h6 class="mb-0">Sign In Page</h6>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-6 mt-md-3 mt-6">
-                <a href="./pages/author.html">
-                  <div class="card move-on-hover">
-                    <img class="w-100" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/assets/img/author.jpg" alt="author">
-                  </div>
-                  <div class="mt-2 ms-2">
-                    <h6 class="mb-0">Author Page</h6>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 mx-auto mt-md-0 mt-5">
-            <div class="position-sticky" style="top:100px !important">
-              <h4 class="">Presentation Pages for Company, Sign In Page, Author and Contact</h4>
-              <h6 class="text-secondary font-weight-normal">These is just a small selection of the multiple possibitilies you have. Focus on the business, not on the design.</h6>
-            </div>
-          </div>
-        </div>
-    </section>
-    <!-- -------- START Content Presentation Docs ------- -->
-
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="info-horizontal bg-gradient-primary border-radius-xl d-block d-md-flex p-4">
-            <i class="material-icons text-white text-3xl">flag</i>
-            <div class="ps-0 ps-md-3 mt-3 mt-md-0">
-              <h5 class="text-white">Getting Started</h5>
-              <p class="text-white">Check the possible ways of working with our product and the necessary files for building your own project.</p>
-              <a href="https://www.creative-tim.com/learning-lab/bootstrap/overview/material-kit" class="text-white icon-move-right">
-                Let's start
-                <i class="fas fa-arrow-right text-sm ms-1"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 px-lg-1 mt-lg-0 mt-4">
-          <div class="info-horizontal bg-gray-100 border-radius-xl d-block d-md-flex p-4 h-100">
-            <i class="material-icons text-gradient text-primary text-3xl">precision_manufacturing</i>
-            <div class="ps-0 ps-md-3 mt-3 mt-md-0">
-              <h5>Plugins</h5>
-              <p>Get inspiration and have an overview about the plugins that we used to create the Material Kit.</p>
-              <a href="https://www.creative-tim.com/learning-lab/bootstrap/datepicker/material-kit" class="text-primary icon-move-right">
-                Read more
-                <i class="fas fa-arrow-right text-sm ms-1"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 mt-lg-0 mt-4">
-          <div class="info-horizontal bg-gray-100 border-radius-xl d-block d-md-flex p-4">
-            <i class="material-icons text-gradient text-primary text-3xl">receipt_long</i>
-            <div class="ps-0 ps-md-3 mt-3 mt-md-0">
-              <h5>Utility Classes</h5>
-              <p>Material Kit is giving you a lot of pre-made elements. For those who want flexibility, we included many utility classes.</p>
-              <a href="https://www.creative-tim.com/learning-lab/bootstrap/utilities/material-kit" class="text-primary icon-move-right">
-                Read more
-                <i class="fas fa-arrow-right text-sm ms-1"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    
     <!-- -------- END Content Presentation Docs ------- -->
     <section class="py-7">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 mx-auto text-center">
-            <h2 class="mb-0">Trusted by over</h2>
-            <h2 class="text-gradient text-primary mb-3">1,679,477+ web developers</h2>
-            <p class="lead">Many Fortune 500 companies, startups, universities and governmental institutions love Creative Tim's products. </p>
+            <p class="lead">Los esperamos con mucha anticipacion.</p>
           </div>
         </div>
         </div>
         <hr class="horizontal dark my-5">
         <div class="row">
           <div class="col-lg-2 col-md-4 col-6 ms-auto">
-            <img class="w-100 opacity-6" src="./assets/img/logos/gray-logos/logo-apple.svg" alt="Logo">
+            <img class="w-100 opacity-6" src="./assets/img/jessica/jess4.jpg" alt="Logo">
           </div>
           <div class="col-lg-2 col-md-4 col-6">
-            <img class="w-100 opacity-6" src="./assets/img/logos/gray-logos/logo-facebook.svg" alt="Logo">
+            <img class="w-100 opacity-6" src="./assets/img/jessica/jess2.jpg" alt="Logo">
           </div>
           <div class="col-lg-2 col-md-4 col-6">
-            <img class="w-100 opacity-6" src="./assets/img/logos/gray-logos/logo-nasa.svg" alt="Logo">
+            <img class="w-100 opacity-6" src="./assets/img/jessica/jess1.jpg" alt="Logo">
           </div>
           <div class="col-lg-2 col-md-4 col-6 ms-lg-0 ms-md-auto">
-            <img class="w-100 opacity-6" src="./assets/img/logos/gray-logos/logo-vodafone.svg" alt="Logo">
+            <img class="w-100 opacity-6" src="./assets/img/jessica/jess3.jpg" alt="Logo">
           </div>
           <div class="col-lg-2 col-md-4 col-6 me-md-auto mx-md-0 mx-auto">
             <img class="w-100 opacity-6" src="./assets/img/jessica/main.jpg" alt="Logo">
@@ -742,86 +531,15 @@
     </section>
     
     </section>
-    <section class="my-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-7 col-12 my-auto">
-            <h3 class="text-gradient text-primary mb-0">You liked it and</h3>
-            <h3>Want more?</h3>
-            <p class="pe-md-5 mb-4">
-              Most complex and innovative Design System Made by <a href="https://creative-tim.com/" target="_blank">Creative Tim </a> . Check our latest Premium Bootstrap 5 UI Kit.
-              Designed for those who like bold elements and beautiful websites. Made of hundred of elements, designed blocks and fully coded pages, Material Kit is ready to help you create stunning websites and webapps.
-            </p>
-            <div class="github-buttons">
-              <a href="https://www.creative-tim.com/product/material-kit-pro?ref=index-mk2" target="_blank" class="btn bg-gradient-primary mb-5 mb-sm-0">Upgrade to Pro</a>
-              <div class="github-button">
-                <span></span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-5 col-12 my-auto">
-            <a href="https://www.creative-tim.com/product/material-kit-pro?ref=index-mk2">
-              <img class="w-100 border-radius-lg shadow-lg" src="https://s3.amazonaws.com/creativetim_bucket/products/46/original/material-kit-pro.jpg?1632843641" alt="Product Image">
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- -------   START PRE-FOOTER 2 - simple social line w/ title & 3 buttons    -------- -->
-    <div class="py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-5 ms-auto">
-            <h5 class="mb-1">Los esperamos con mucha anticipacion! </h4>
-            
-          </div>
-          
-          
-        </div>
-      </div>
-    </div>
+    
     <!-- -------   END PRE-FOOTER 2 - simple social line w/ title & 3 buttons    -------- -->
   </div>
   <footer class="footer pt-5 mt-5">
     <div class="container">
       <div class=" row">
         <div class="col-md-3 mb-4 ms-auto">
-          <div>
-            <a href="https://www.creative-tim.com/product/material-kit">
-              <img src="./assets/img/logo-ct-dark.png" class="mb-3 footer-logo" alt="main_logo">
-            </a>
-            <h6 class="font-weight-bolder mb-4">Quincianera de Jessica</h6>
-          </div>
-          <div>
-            <ul class="d-flex flex-row ms-n3 nav">
-              <li class="nav-item">
-                <a class="nav-link pe-1" href="https://www.facebook.com/CreativeTim" target="_blank">
-                  <i class="fab fa-facebook text-lg opacity-8"></i>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link pe-1" href="https://twitter.com/creativetim" target="_blank">
-                  <i class="fab fa-twitter text-lg opacity-8"></i>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link pe-1" href="https://dribbble.com/creativetim" target="_blank">
-                  <i class="fab fa-dribbble text-lg opacity-8"></i>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link pe-1" href="https://github.com/creativetimofficial" target="_blank">
-                  <i class="fab fa-github text-lg opacity-8"></i>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link pe-1" href="https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w" target="_blank">
-                  <i class="fab fa-youtube text-lg opacity-8"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+  
+
        
         <div class="col-12">
           <div class="text-center">
