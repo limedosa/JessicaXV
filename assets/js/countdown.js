@@ -43,3 +43,5 @@ const expirationDate = 'July 20, 2024 7:00:00'; // Define or get your date
     let countdownInterval = null;
     updateCountdown();    
     countdownInterval = setInterval(updateCountdown, 1000);
+
+
