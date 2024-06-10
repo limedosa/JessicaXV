@@ -8,7 +8,7 @@
   },
   "scripts": {
     "open-app": "gulp open-app",
-    "start": "npm run open-app",
+    "start": "node rsvp-server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "gulp-watch"
   },
