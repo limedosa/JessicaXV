@@ -11,6 +11,12 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Handle GET request for '/'
+app.get('/', (req, res) => {
+  res.send('Hello World!'); // Replace with your desired response
+});
+
+// Handle POST request for '/rsvp'
 app.post('/rsvp', (req, res) => {
   const { name, email, attendance } = req.body;
   const filePath = path.join(__dirname, 'rsvpData.json');
@@ -38,6 +44,7 @@ app.post('/rsvp', (req, res) => {
   }
 });
 
+// Start server
 app.listen(port, () => {
   console.log(`RSVP server listening at http://localhost:${port}`);
 });
