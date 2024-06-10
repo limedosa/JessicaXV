@@ -5,7 +5,7 @@ const path = require('path');
 const fs = require('fs');
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -13,25 +13,29 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.post('/rsvp', (req, res) => {
   const { name, email, attendance } = req.body;
+  const filePath = path.join(__dirname, 'rsvpData.json');
 
-  // Read existing data
-  let data = [];
-  const filePath = ('rsvpData.json');
+  try {
+    // Read existing data if file exists
+    let data = [];
+    if (fs.existsSync(filePath)) {
+      const existingData = fs.readFileSync(filePath);
+      data = JSON.parse(existingData);
+    }
 
-  if (fs.existsSync(filePath)) {
-    const existingData = fs.readFileSync(filePath);
-    data = JSON.parse(existingData);
+    // Add new RSVP
+    const newRsvp = { name, email, attendance };
+    data.push(newRsvp);
+
+    // Save updated data to JSON file
+    fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
+
+    console.log(`RSVP received: ${name}, ${email}, ${attendance}`);
+    res.json({ message: 'Thank you for your RSVP!' });
+  } catch (error) {
+    console.error('Error saving RSVP:', error.message);
+    res.status(500).json({ error: 'Failed to save RSVP' });
   }
-
-  // Add new RSVP
-  const newRsvp = { name, email, attendance };
-  data.push(newRsvp);
-
-  // Save updated data to JSON file
-  fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
-
-  console.log(`RSVP received: ${name}, ${email}, ${attendance}`);
-  res.json({ message: 'Thank you for your RSVP!' });
 });
 
 app.listen(port, () => {
