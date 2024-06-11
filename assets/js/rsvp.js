@@ -4,13 +4,13 @@ document.getElementById('rsvpForm').addEventListener('submit', function(event) {
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const attendance = document.getElementById('attendance').value;
-    const numppl = document.getElementById('numppl').value;
+    const number = document.getElementById('number').value;
   
     const rsvpData = {
       name: name,
       email: email,
       attendance: attendance,
-      numppl: numppl
+      number: number
     };
   
     // Send data to server

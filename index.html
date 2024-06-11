@@ -245,39 +245,39 @@
     
     <!-- RSVP -->
 
-    <section class="my-5 py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 mx-auto text-center">
-            <h3>RSVP</h3>
-            <form id="rsvpForm" action="https://boiling-bayou-24310-16991f1e258a.herokuapp.com/rsvp" method="POST">
-              <div class="mb-3">
-                <label for="name" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="name" name="name" required>
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" name="email" required>
-              </div>
-              <div class="mb-3">
-                <label for="attendance" class="form-label">Podran atender?</label>
-                <select class="form-control" id="attendance" name="attendance" required>
-                  <option value="yes">Si</option>
-                  <option value="no">No</option>
-                </select>
-              </div>
-              <div class="mb-3">
-                <label for="numppl" class="form-label">Numero de personas</label>
-                <input type="text" class="form-control" id="numppl" name="numppl" required>
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-            <div id="rsvpMessage" class="mt-3"></div>
+<section class="my-5 py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 mx-auto text-center">
+        <h3>RSVP</h3>
+        <form id="rsvpForm" action="https://boiling-bayou-24310-16991f1e258a.herokuapp.com/rsvp" method="POST">
+          <div class="mb-3">
+            <label for="name" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="name" name="name" required>
           </div>
-        </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="attendance" class="form-label">Podran atender?</label>
+            <select class="form-control" id="attendance" name="attendance" required>
+              <option value="yes">Si</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="number" class="form-label">Numero de personas</label>
+            <input type="number" class="form-control" id="number" name="number" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <div id="rsvpMessage" class="mt-3"></div>
       </div>
-    </section>
-    
+    </div>
+  </div>
+</section>
+
     <!-- -------- END Content Presentation Docs ------- -->
     <section class="py-7">
       <div class="container">
@@ -339,7 +339,7 @@ document.getElementById('rsvpForm').addEventListener('submit', async function(ev
   const data = {
     name: form.name.value,
     email: form.email.value,
-    numppl: form.numppl.value,
+    number: form.number.value,
     attendance: form.attendance.value
 
   };
@@ -414,7 +414,7 @@ document.getElementById('rsvpForm').addEventListener('submit', async function(ev
         const data = {
           name: form.name.value,
           email: form.email.value,
-          numppl: form.numppl.value,
+          number: form.number.value,
           attendance: form.attendance.value
         };
   
