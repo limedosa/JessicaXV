@@ -28,7 +28,7 @@ const expirationDate = 'July 20, 2024 00:00:00'; // Define or get your date
         Array.from(minutesElements).forEach(el => el.innerHTML = minutes);
         Array.from(secondsElements).forEach(el => el.innerHTML = seconds);
       
-        // Output for over time
+        // Output for time
         if (timeToLive < 0) {
           countdownInterval && clearInterval(countdownInterval);
           Array.from(daysElements).forEach(el => el.innerHTML = 0);
