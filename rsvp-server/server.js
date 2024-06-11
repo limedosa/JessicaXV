@@ -40,7 +40,7 @@ app.post('/rsvp', (req, res) => {
     res.status(200).json({ message: 'RSVP submitted successfully!' });
   } catch (error) {
     console.error('Error saving RSVP:', error);
-    res.status(500).json({ message: 'Error saving RSVP. Please try again.' });
+    res.status(500).json({ message: '' });
   }
 });
 
