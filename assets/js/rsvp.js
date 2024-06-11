@@ -4,17 +4,17 @@ document.getElementById('rsvpForm').addEventListener('submit', function(event) {
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const attendance = document.getElementById('attendance').value;
-    const number = document.getElementById('number').value;
-
+    const numppl = document.getElementById('numppl').value;
+  
     const rsvpData = {
-      number: number,
       name: name,
       email: email,
       attendance: attendance,
+      numppl: numppl
     };
   
     // Send data to server
-    fetch('your-server-endpoint-here', {
+    fetch('https://boiling-bayou-24310-16991f1e258a.herokuapp.com/rsvp', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -23,13 +23,13 @@ document.getElementById('rsvpForm').addEventListener('submit', function(event) {
     })
     .then(response => response.json())
     .then(data => {
-      alert('Gracias por su respuesta!');
+      document.getElementById('rsvpMessage').innerHTML = '<p>Gracias por su respuesta!</p>';
       // Optionally, clear the form fields
       document.getElementById('rsvpForm').reset();
     })
     .catch(error => {
       console.error('Error:', error);
-      alert('Gracias por su respuesta!');
+      document.getElementById('rsvpMessage').innerHTML = '<p>Ocurrió un error. Por favor, inténtelo de nuevo.</p>';
     });
   });
   
