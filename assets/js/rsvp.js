@@ -4,11 +4,13 @@ document.getElementById('rsvpForm').addEventListener('submit', function(event) {
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const attendance = document.getElementById('attendance').value;
-  
+    const number = document.getElementById('number').value;
+
     const rsvpData = {
+      number: number,
       name: name,
       email: email,
-      attendance: attendance
+      attendance: attendance,
     };
   
     // Send data to server
@@ -21,13 +23,13 @@ document.getElementById('rsvpForm').addEventListener('submit', function(event) {
     })
     .then(response => response.json())
     .then(data => {
-      alert('Thank you for your response!');
+      alert('Gracias por su respuesta!');
       // Optionally, clear the form fields
       document.getElementById('rsvpForm').reset();
     })
     .catch(error => {
       console.error('Error:', error);
-      alert('There was an error submitting your response. Please try again.');
+      alert('Gracias por su respuesta!');
     });
   });
   

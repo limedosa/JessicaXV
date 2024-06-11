@@ -18,8 +18,8 @@ app.get('/', (req, res) => {
 
 // Handle POST request for '/rsvp'
 app.post('/rsvp', (req, res) => {
-  const { name, email, attendance } = req.body;
-  const filePath = path.join(__dirname, 'rsvpData.json');
+  const { name, email, number, attendance } = req.body;
+  const filePath = path.join(__dirname, 'rsvpDataJes.json');
 
   try {
     // Read existing data if file exists
@@ -30,7 +30,7 @@ app.post('/rsvp', (req, res) => {
     }
 
     // Add new RSVP
-    const newRsvp = { name, email, attendance };
+    const newRsvp = { name, email, number, attendance };
     data.push(newRsvp);
 
     // Save updated data to JSON file
