@@ -262,28 +262,28 @@
     <div class="row">
       <div class="col-lg-6 mx-auto text-center">
         <h3>RSVP</h3>
-        <form id="rsvpForm" action="https://boiling-bayou-24310-16991f1e258a.herokuapp.com/rsvp" method="POST">
+        <form onsubmit="sendEmail(); return false;">
           <div class="mb-3">
-            <label for="name" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="name" name="name" required>
+              <label for="name" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="name" name="name" required>
           </div>
           <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" name="email" required>
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" name="email" required>
           </div>
           <div class="mb-3">
-            <label for="attendance" class="form-label">Podran atender?</label>
-            <select class="form-control" id="attendance" name="attendance" required>
-              <option value="yes">Si</option>
-              <option value="no">No</option>
-            </select>
+              <label for="attendance" class="form-label">Podran atender?</label>
+              <select class="form-control" id="attendance" name="attendance" required>
+                  <option value="yes">Si</option>
+                  <option value="no">No</option>
+              </select>
           </div>
           <div class="mb-3">
-            <label for="number" class="form-label">Numero de personas</label>
-            <input type="number" class="form-control" id="number" name="number" required>
+              <label for="number" class="form-label">Numero de personas</label>
+              <input type="number" class="form-control" id="number" name="number" required>
           </div>
           <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+      </form>
         <div id="rsvpMessage" class="mt-3"></div>
       </div>
     </div>
@@ -344,6 +344,23 @@
   <!--   Core JS Files   -->
   <script src="./assets/js/countdown.js"></script>
   <script src="./assets/js/rsvp.js"></script>
+  <script>
+    function sendEmail() {
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var attendance = document.getElementById('attendance').value;
+        var number = document.getElementById('number').value;
+        
+        var subject = 'RSVP Response';
+        var body = 'Nombre: ' + name + '%0A' +
+                   'Email: ' + email + '%0A' +
+                   'Podran atender: ' + attendance + '%0A' +
+                   'Numero de personas: ' + number;
+        
+        var mailto_link = 'mailto:ldominguez3886@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+        window.location.href = mailto_link;
+    }
+</script>
   <script>
 document.getElementById('rsvpForm').addEventListener('submit', async function(event) {
   event.preventDefault();
