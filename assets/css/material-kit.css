@@ -11047,7 +11047,7 @@ img {
 }
 .carousel-item img {
   width: 100%; /* Make sure images fill the container */
-  height: 700px; /* Set a fixed height for uniformity bc all img were diff size*/
+  height: 20%; /* Set a fixed height for uniformity bc all img were diff size*/
   object-fit: cover; /* Ensure images cover the entire container without distortion */
 }
 
