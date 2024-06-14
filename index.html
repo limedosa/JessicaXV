@@ -364,9 +364,9 @@
         var number = document.getElementById('number').value;
         
         var subject = 'RSVP Response';
-        var body = 'Nombre: ' + name + '%0A' +
-                   'Email: ' + email + '%0A' +
-                   'Podran atender: ' + attendance + '%0A' +
+        var body = 'Nombre: ' + name + '\n ' +
+                   'Email: ' + email + '\n' +
+                   'Podran atender: ' + attendance + '\n ' +
                    'Numero de personas: ' + number;
         
         var mailto_link = 'mailto:ldominguez3886@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
