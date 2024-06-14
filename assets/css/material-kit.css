@@ -11032,6 +11032,33 @@ fieldset:disabled .btn {
   overflow-y: scroll !important;
 }
 
+/* carousel */
+
+/* 
+.carousel-inner img {
+  display: block;
+  margin: auto;
+  max-height: 500px; /* Adjust as needed */
+  /* max-width: 100%; Adjust as needed */
+/* } */ 
+.container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; /* Adjust as needed */
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.carousel-item img {
+  width: 100%; /* Make sure images fill the container */
+  height: 400px; /* Set a fixed height for uniformity */
+  object-fit: cover; /* Ensure images cover the entire container without distortion */
+}
+
+/* END CAROUSEL */
+
 
 .shadow-primary {
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(233, 30, 99, 0.4) !important;
