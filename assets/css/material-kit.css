@@ -11041,19 +11041,14 @@ fieldset:disabled .btn {
   max-height: 500px; /* Adjust as needed */
   /* max-width: 100%; Adjust as needed */
 /* } */ 
-.container {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%; /* Adjust as needed */
-}
+
 img {
   max-width: 100%;
   height: auto;
 }
 .carousel-item img {
   width: 100%; /* Make sure images fill the container */
-  height: 400px; /* Set a fixed height for uniformity */
+  height: 700px; /* Set a fixed height for uniformity bc all img were diff size */
   object-fit: cover; /* Ensure images cover the entire container without distortion */
 }
 
