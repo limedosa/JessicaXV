@@ -275,11 +275,11 @@
         <p class="lead">Por favor llena el RSVP para dejarnos saber que nos podras acompañarar.</p>
         <form onsubmit="sendEmail(); return false;">
           <div class="mb-3">
-              <label for="name" class="form-label">Nombre</label>
+              <label for="name" class="form-label">Nombre:</label>
               <input type="text" class="form-control" id="name" name="name" required>
           </div>
           <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
+              <label for="email" class="form-label">Email:</label>
               <input type="email" class="form-control" id="email" name="email" required>
           </div>
           <div class="mb-3">
@@ -289,10 +289,15 @@
                   <option value="no">No</option>
               </select>
           </div>
+          
           <div class="mb-3">
-              <label for="number" class="form-label">Numero de personas</label>
+              <label for="number" class="form-label">Numero de personas:</label>
               <input type="number" class="form-control" id="number" name="number" required>
           </div>
+          <div class="mb-3">
+            <label for="number" class="form-label">Nombre de personas atendiendo: </label>
+            <input type="number" class="form-control" id="number" name="number" required>
+        </div>
           <button type="submit" class="btn btn-primary">Enviar</button>
       </form>
         <div id="rsvpMessage" class="mt-3"></div>
