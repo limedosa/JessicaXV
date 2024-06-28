@@ -521,12 +521,14 @@
         var email = document.getElementById('email').value;
         var attendance = document.getElementById('attendance').value;
         var number = document.getElementById('number').value;
+        var nameAttendees = document.getElementById('nameAttendees').value;
         
         var subject = 'RSVP Response';
         var body = 'Nombre: ' + name + '\n ' +
                    'Email: ' + email + '\n' +
                    'Podran atender: ' + attendance + '\n ' +
-                   'Numero de personas: ' + number;
+                   'Numero de personas: ' + number + '\n ' +
+                   'Nombres: ' + nameAttendees;
         
         var mailto_link = 'mailto:ldominguez3886@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
         window.location.href = mailto_link;
